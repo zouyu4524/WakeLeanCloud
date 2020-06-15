@@ -33,6 +33,3 @@ jobs:
         $CONFIG_SITE: ${{ secrets.Site }} # 读取评论后台地址
       run: | 
         python run.py ${{ secrets.Site }}
-        echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
